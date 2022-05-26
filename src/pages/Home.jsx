@@ -13,6 +13,7 @@ function Home() {
   useEffect(() => {
     dispatch(getProduct());
   }, []);
+
   return (
     product && (
       <div className="container__home">
