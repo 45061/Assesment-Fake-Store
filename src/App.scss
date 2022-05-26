@@ -1,0 +1,22 @@
+header {
+  background-color: #8b25d7;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 26px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav a.is-active {
+  font-weight: bold;
+  pointer-events: none;
+}
