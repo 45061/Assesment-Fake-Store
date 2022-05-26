@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>🛒Fake Store🛒</h1>
+        <Link to="/">
+          <h1>🛒Fake Store🛒</h1>
+        </Link>
         <nav>
           <ul>
             <li>
