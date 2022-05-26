@@ -8,13 +8,13 @@
 `4. Y, finalmente, una Retrospectiva para inspeccionar el equipo y levantar mejoras que se apliquen en el siguiente Sprint.`
 `5. Adicionalmente se ha incorporado también una reunión de Grooming o Refinement, que sirve para, dentro del Sprint, afinar y aclarar ciertas historias de usuario que pudieron quedar pendientes durante el Sprint Planning.`
 
-## ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
+# ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
 
 `Un wireframe o prototipo no es más que un boceto donde se representa visualmente, de una forma muy sencilla y esquemática la estructura de una página web.`
 
 `Se pueden realizar Wireframes a mano, o en la nube podemos utilizar figna.com o MockFlow`
 
-### Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
+# Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
 
 `var definimos una variable con local scope, también nos permite utilizar un comportamiento llamado hoisting, sin generar ningún error.`
 
@@ -22,27 +22,27 @@
 
 `const definimos variables de sólo lectura (no confundir con inmutables), esto quiere decir que, cuando asignamos una variable, el nombre de esta va estar asignada a un puntero en memoria, el cual no puede ser sobreescrito o reasignado.`
 
-#### ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
+# ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
 
 `git checkout -b rama-1`
 `git branch rama-1`
 `git branch create rama-1`
 
-##### Explicar la diferencia entre git merge y git rebase.
+# Explicar la diferencia entre git merge y git rebase.
 
 `git merge al ser aplicado, mantiene a salvo la historia de la rama secundaria, ya que crea un nuevo commit que une ambas ramas sin “eliminarlas”, creando un nuevo punto de continuación que tiene 2 historias por detrás.`
 
 `git rebase al ser aplicado, NO mantiene a salvo la historia de la rama secundaria, sino que “re-escribe” la historia de la rama principal integrando los commits de la rama secundaria en la rama principal, no crea un commit de unión adicional, sino que cambia el puntero (HEAD) al último commit que ubica.`
 
-###### ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
+# ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
 
 `Si se usa git pull, extrae los cambios del repositorio remoto al personal en cambio, si envía un pull request a otro repositorio, le pide a sus mantenedores que extraigan sus cambios al suyo (más o menos les pide que usen un git pull desde su repositorio)`
 
-###### # ¿Qué es el Virtual DOM?
+# ¿Qué es el Virtual DOM?
 
 `El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario). Cuando ocurre un cambio en la aplicación web, el virtual DOM interpreta dichos cambios y calcula la manera más eficiente de actualizar el DOM para que renderice la menor cantidad de cambios posibles.`
 
-###### ## CSS del punto 8
+# CSS del punto 8
 
 .c-services{
 display: grid;
