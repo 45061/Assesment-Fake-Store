@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Un Sprint normal tendría los siguiente eventos o ceremonias:`
 
-## Available Scripts
+`1. El Sprint Planning se realiza al comienzo del Sprint`
+`2. Daily Scrums este se realiza a diario`
+`3. Un Sprint Review al final del Sprint para inspeccionar el incremento realizado.`
+`4. Y, finalmente, una Retrospectiva para inspeccionar el equipo y levantar mejoras que se apliquen en el siguiente Sprint.`
+`5. Adicionalmente se ha incorporado también una reunión de Grooming o Refinement, que sirve para, dentro del Sprint, afinar y aclarar ciertas historias de usuario que pudieron quedar pendientes durante el Sprint Planning.`
 
-In the project directory, you can run:
+## ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
 
-### `npm start`
+`Un wireframe o prototipo no es más que un boceto donde se representa visualmente, de una forma muy sencilla y esquemática la estructura de una página web.`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`Se pueden realizar Wireframes a mano, o en la nube podemos utilizar figna.com o MockFlow`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
 
-### `npm test`
+`var definimos una variable con local scope, también nos permite utilizar un comportamiento llamado hoisting, sin generar ningún error.`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`let definimos variable con block scope, las variables declaradas de esta manera nos genera un error de referencia cuando intentamos utilizar hoisting.`
 
-### `npm run build`
+`const definimos variables de sólo lectura (no confundir con inmutables), esto quiere decir que, cuando asignamos una variable, el nombre de esta va estar asignada a un puntero en memoria, el cual no puede ser sobreescrito o reasignado.`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`git checkout -b rama-1`
+`git branch rama-1`
+`git branch create rama-1`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Explicar la diferencia entre git merge y git rebase.
 
-### `npm run eject`
+`git merge al ser aplicado, mantiene a salvo la historia de la rama secundaria, ya que crea un nuevo commit que une ambas ramas sin “eliminarlas”, creando un nuevo punto de continuación que tiene 2 historias por detrás.`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`git rebase al ser aplicado, NO mantiene a salvo la historia de la rama secundaria, sino que “re-escribe” la historia de la rama principal integrando los commits de la rama secundaria en la rama principal, no crea un commit de unión adicional, sino que cambia el puntero (HEAD) al último commit que ubica.`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###### ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`Si se usa git pull, extrae los cambios del repositorio remoto al personal en cambio, si envía un pull request a otro repositorio, le pide a sus mantenedores que extraigan sus cambios al suyo (más o menos les pide que usen un git pull desde su repositorio)`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+###### # ¿Qué es el Virtual DOM?
 
-## Learn More
+`El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario). Cuando ocurre un cambio en la aplicación web, el virtual DOM interpreta dichos cambios y calcula la manera más eficiente de actualizar el DOM para que renderice la menor cantidad de cambios posibles.`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###### ## CSS del punto 8
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+.c-services{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+padding: 0;
+}
+.c-section\_\_title{
+display: flex;
+text-align: center;
+background-color: rgb(170, 166, 166);
+padding-top: 8px;
 
-### Code Splitting
+}
+span{
+background-color: rgb(38, 41, 38);
+color: white;
+margin-bottom: 0px;
+padding: 20px;
+width: 100%;
+font-family: 'Courier New', Courier, monospace;
+font-size: 30px;
+font-weight: 500;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+.c-services\_\_item{
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+width: 100%;
+height: auto;
+background-color: rgb(245, 245, 245);
+font-size: 24px;
+font-family: sans-serif;
+}
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+h3{
+text-align: center;
+}
